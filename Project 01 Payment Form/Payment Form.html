@@ -19,7 +19,7 @@
             </header>
             <h2>Details</h2>
             <p> <label for="name">Name: *</label> <input class="name" id="name" type="text" name="name" placeholder="Full Name" required></p>
-            <p>    
+            <p>
                 <fieldset>
                     <legend> Gender: *</legend>
                         male <input type="radio" name="gender" id="male" required> Female <input
@@ -27,22 +27,23 @@
                 </fieldset>
             </p>
             <p>
-                <legend>Address: *</legend>
+                <legend><label for="address">Address: *</label></legend>
                 <textarea name="address" id="address" cols="55" rows="5" required></textarea>
             </p>
-            <p>Pincode: *
+            <p><label for="pincode">Pincode: *</label>
                 <input class="inputs" type="number" name="pincode" id="pincode" required>
             </p>
-            <p>Email:
+            <p> <label for="email">Email: *</label>
                 <input class="inputs" type="email" name="email" id="email">
             </p>
             <p>
-                Phone Number: *
-                <input class="inputs" type="tel" name="" id="" required>
+                <label for="phonenumber">Phone Number: *</label>
+                <input class="inputs" type="tel" name="" id="phonenumber" required>
             </p>
             <hr>
             <h2>Payment Information:</h2>
-            <p>Card Type: *
+            <p>
+                <label for="card_type">Card Type: *</label>
                 <select name="card_type" id="card_type" required>
                     <option value="">---Select a card type---</option>
                     <option value="visa">Visa</option>
@@ -50,13 +51,16 @@
                     <option value="rupay">Rupay</option>
                 </select>
             </p>
-            <p>Card number: *
+            <p>
+                <label for="card_number">Card number: *</label>
                 <input class="inputs" type="number" name="card_number" id="card_number" required>
             </p>
-            <p>Expiration Date: *
+            <p>
+                <label for="expiration_date">Expiration Date: *</label>
                 <input class="inputs" type="date" name="expiration_date" id="expiration_date" required>
             </p>
-            <p>CVV: *
+            <p>
+                <label for="cvv">CVV: *</label>
                 <input class="inputs" type="password" name="cvv" id="cvv" required>
             </p>
             <button type="submit">Pay Now</button>
