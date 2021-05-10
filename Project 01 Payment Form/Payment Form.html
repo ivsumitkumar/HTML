@@ -12,13 +12,14 @@
 <body>
     <div class="container">
         <form action="">
-            <header>
+            <div class="head">
                 <h1>Payment Form</h1>
                 <hr>
-                <p class="instructions">Required fields are followed by *</p>
-            </header>
+            </div>
+            <p class="instructions">Required fields are followed by *</p>
+            <hr>
             <h2>Details</h2>
-            <p> <label for="name">Name: *</label> <input class="name" id="name" type="text" name="name" placeholder="Full Name" required></p>
+            <p> <label for="name">Name: *</label> <input class="inputs" id="name" type="text" name="name" placeholder="Full Name" required></p>
             <p>
                 <fieldset>
                     <legend> Gender: *</legend>
@@ -28,17 +29,17 @@
             </p>
             <p>
                 <legend><label for="address">Address: *</label></legend>
-                <textarea name="address" id="address" cols="55" rows="5" required></textarea>
+                <textarea name="address" id="address" cols="55" rows="3" placeholder="Enter your address" required></textarea>
             </p>
             <p><label for="pincode">Pincode: *</label>
-                <input class="inputs" type="number" name="pincode" id="pincode" required>
+                <input class="inputs" type="number" name="pincode" id="pincode" placeholder="Enter Pincode" required>
             </p>
-            <p> <label for="email">Email: *</label>
-                <input class="inputs" type="email" name="email" id="email">
+            <p> <label for="email">Email:</label>
+                <input class="inputs" type="email" name="email" id="email" placeholder="Enter your email ID">
             </p>
             <p>
                 <label for="phonenumber">Phone Number: *</label>
-                <input class="inputs" type="tel" name="" id="phonenumber" required>
+                <input class="inputs" type="tel" name="" id="phonenumber" placeholder="Enter your phone number" required>
             </p>
             <hr>
             <h2>Payment Information:</h2>
@@ -53,15 +54,14 @@
             </p>
             <p>
                 <label for="card_number">Card number: *</label>
-                <input class="inputs" type="number" name="card_number" id="card_number" required>
+                <input class="inputs" type="number" name="card_number" id="card_number" placeholder="Enter card number" required>
             </p>
             <p>
                 <label for="expiration_date">Expiration Date: *</label>
                 <input class="inputs" type="date" name="expiration_date" id="expiration_date" required>
-            </p>
-            <p>
+
                 <label for="cvv">CVV: *</label>
-                <input class="inputs" type="password" name="cvv" id="cvv" required>
+                <input class="inputs" type="password" name="cvv" id="cvv" placeholder="Enter CVV" required>
             </p>
             <button type="submit">Pay Now</button>
 

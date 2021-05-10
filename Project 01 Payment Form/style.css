@@ -1,35 +1,85 @@
 *{
     box-sizing: border-box;
     padding: 0px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
 }
 
 body {
-    margin: 15px 30px;
+    margin: 25px 400px;
     font-size: 15px;
     padding: 7px;
 }
 
 .container {
-    background-color: rgba(196, 193, 193, 0.151);
-    padding: 5px 5px;
+    /* background-color: rgba(196, 193, 193, 0.151); */
+    padding: 1px 1px;
+    border: 2px solid green;
+    border-radius: 5px;
+    border-top-right-radius:10px ;
+    border-top-left-radius:10px ;
+}
+
+.head {
+    /* background-color: rgb(241, 245, 8); */
+    background-color: rgba(43, 192, 230, 0.877);
+    padding-top: 50px;
     border: 1px;
-    border-radius: 4px;
+    border-top-right-radius:10px ;
+    border-top-left-radius:10px ;
 }
 
 h1 {
+    color: honeydew;
     text-align: center;
-    
+    margin: 0px;
 }
+
+h2{
+    text-align: center;
+}
+
 p.instructions {
     color: red;
     margin-left: 15px;
     padding-top: 15px;
 }
-.inputs {
-    width: 100%;
+
+label {
+    margin-left: 8px;
+}
+
+.inputs,select,textarea {
     padding: 11px;
     border: 1px solid rgba(106, 172, 172, 0.89);
     border-radius: 5px;
+    margin: 8px;
+}
+
+#name, #address, #email, #phonenumber, #card_number {
+    width: 95%;
+}
+
+fieldset {
+    padding: 11px;
+    margin:8px;
+    width: 95%;
+    background-color: #fff;
+    border: 1px solid rgb(106, 172, 172, 0.89);
+    border-radius:5px;
+}
+
+button[type="submit"] {
+    background-color: rgb(29, 183, 221);
+    color: white;
+    padding:8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(29, 176, 221);
+    color: rgb(22, 236, 22);
 }
