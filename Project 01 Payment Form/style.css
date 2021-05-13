@@ -11,7 +11,7 @@ body {
   padding: 7px;
 }
 
-.container {
+main {
   background-color: rgba(196, 193, 193, 0.151);
   padding: 1px 1px;
   border: 1px solid rgba(43, 192, 230, 0.877);
