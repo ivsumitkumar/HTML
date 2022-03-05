@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <form action="">
+            
+            <div class="head">
+                <h1>Registration Form</h1>
+                <hr>
+            </div>
+            <p class="instructions">Required fields are followed by *</p>
+            <hr>
+
+            <section>
+                <h2>Student Details</h2>
+
+                <p>
+                    <label for="name">Name: *</label> <input class="inputs" id="name" type="text" name="name"
+                        placeholder="Full Name" required>
+                </p>
+
+                <p>
+                <fieldset>
+                    <legend> Gender: *</legend>
+                    male <input type="radio" name="gender" id="male" required> Female <input type="radio" name="gender"
+                        id="female" required>
+                </fieldset>
+                </p>
+
+                <p>
+                    <label for="DOB">Date Of Birth: *</label>
+                    <input class="inputs" type="date" name="DOB" id="DOB" required>
+                </p>
+
+                <p>
+                    <label for="fathersname">Father's Name: *</label> <input class="inputs" id="fathers_name" type="text" name="fathers_name"
+                        placeholder="Father's Name" required>
+                </p>
+
+                <p>
+                    <label for="college_name">College Name: *</label> <input class="inputs" id="college_name" type="text" name="College_name"
+                        placeholder="College Name" required>
+                </p>
+
+                <p>
+                    <label for="Branch">Branch: *</label>
+                    <select name="Branch" id="Branch" required>
+                        <option value="">---Select Branch---</option>
+                        <option value="CSE">Computer science and engineering</option>
+                        <option value="ECE">Electronics and communication engineering</option>
+                        <option value="EE">Electrical engineering</option>
+                        <option value="ME">Mechanical engineering</option>
+                        <option value="BT">Bio Technology</option>
+                        <option value="FT">Food Technology</option>
+                    </select>
+                </p>
+
+                <p>
+                    <legend><label for="address">Address: *</label></legend>
+                    <textarea name="address" id="address" cols="55" rows="3" placeholder="Enter your address"
+                        required></textarea>
+                </p>
+
+                <p><label for="pincode">Pincode: *</label>
+                    <input class="inputs" type="number" name="pincode" id="pincode" placeholder="Enter Pincode" required>
+                </p>
+
+                <p> <label for="email">Email:</label>
+                    <input class="inputs" type="email" name="email" id="email" placeholder="Enter your email ID">
+                </p>
+
+                <p>
+                    <label for="phonenumber">Phone Number: *</label>
+                    <input class="inputs" type="tel" name="" id="phonenumber" placeholder="Enter your phone number"
+                        required>
+                </p>
+            </section>
+
+            <div class="wrapper">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+            
+        </form>
+    </main>
+
+</body>
+
+</html>
